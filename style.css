@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --grey1: #212529;
     --grey2: #343A40;
@@ -9,14 +11,17 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Archivo', sans-serif;
 }
 
 body {
     position: relative;
+    background-color: var(--grey1);
+    color: var(--lightgrey);
 }
 
 nav {
-    background-color: aqua;
+    background-color: var(--grey1);
     position: sticky;
     top: 0;
     padding-left: 24px;
@@ -25,20 +30,24 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 50px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
-nav button {
+.hamburger {
     height: 25px;
     width: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background-color: transparent;
+    border-style: none;
+    
 }
 
 .nav-icon {
     width: 20px;
     height: 1px;
-    background-color: black;
+    background-color: var(--lightgrey);
     border-radius: 3px;
 }

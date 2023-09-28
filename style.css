@@ -18,6 +18,8 @@ body {
     position: relative;
     background-color: var(--grey1);
     color: var(--lightgrey);
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 nav {
@@ -51,3 +53,14 @@ nav {
     background-color: var(--lightgrey);
     border-radius: 3px;
 }
+
+.video-container {
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+.intro-video {
+    width: 100%;
+}
+

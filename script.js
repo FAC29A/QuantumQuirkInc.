@@ -45,3 +45,44 @@ const teamMembers = [
     },
 ];
 
+//Here we store the customer reviews
+
+const customerRevs = [
+    {
+        name: "Bigfoot",
+        service: "Cryptozoological SEO",
+        review: "I've been hiding in the wilderness for centuries, but Quantum Quirk Inc. helped me step into the digital age! Now, I'm ranking high in search results, and more people are discovering my existence. Thanks to the Quantum Quirk team for making me an online legend!",
+        id: 1,
+    },
+    {
+        name: "Cleopatra",
+        service: "Time-Traveling Marketing",
+        review: "Quantum Quirk Inc. transported my brand to ancient Egypt, and the results were truly regal! I witnessed my empire rise again, thanks to their marketing magic. Dr. Quark E. Scientist and his team are the Pharaohs of marketing!",
+        id: 2,
+    },
+    {
+        name: "a UFO",
+        service: "Alien Collaboration",
+        review: "Beep boop! I am an intergalactic traveler, and I had the pleasure of collaborating with Quantum Quirk Inc. for my Earth debut. Zog the Alien and his team made sure I had a memorable landing. Beam me up for more projects!",
+        id: 3,
+    },
+    {
+        name: "a Time Traveler",
+        service: "Time-Loop Marketing",
+        review: "I've traveled through time, and I can confirm that Quantum Quirk Inc.'s time-loop marketing is a game-changer! My message keeps resonating across centuries, ensuring my legacy endures. Kudos to Time-Traveler Tim!",
+        id: 4,
+    },
+    {
+        name: "the Loch Ness Monster",
+        service: "Cryptozoological SEO",
+        review: "As a resident of Loch Ness, I'm thrilled with their work! Thanks to Quantum Quirk Inc., I'm no longer a myth but a trending topic. My underwater selfies have never looked better on Google!",
+        id: 5,
+    },
+    {
+        name: "a Martian",
+        service: "Alien Collaboration",
+        review: "Quantum Quirk Inc. brought Mars to Earth! Thanks to Zog the Alien, we now have a cosmic connection with Earthlings. Our red planet is getting greener with every project, and we're over the moon!",
+        id: 6,
+    },
+];
+

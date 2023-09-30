@@ -86,8 +86,21 @@ const customerRevs = [
     },
 ];
 
-// Daniel's Section
+// Function to generate team cards
+function createCards() {
+    const teamContainer = document.getElementById("team-members");
+    teamContainer.innerHTML = '';
 
-
-
-// End of section
+    for (const member of teamMembers) {
+        let newCard = document.createElement('div');
+        newCard.classList.add('team-card');
+        newCard.innerHTML = `
+            <h2 class="member-name">${member.name}</h2>
+            <h3>${member.position}</h3>
+            <img src="${member.img}" alt="${member.name} Image">
+            <p>${member.bio}</p>
+        `;
+        teamContainer.appendChild(newCard);
+    }
+}
+createCards();

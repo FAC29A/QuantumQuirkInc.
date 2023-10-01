@@ -104,3 +104,41 @@ function createCards() {
     }
 }
 createCards();
+
+// Generating user reviews
+
+function generateReview() {
+    const reviewSection = document.getElementById("review-section");
+    
+
+    for(let i = 0; i < customerRevs.length - 1; i++){
+        const { name, service, review } = customerRevs[i];
+
+        const reviewCard = document.createElement("div");
+        reviewCard.classList.add("review-card");
+    
+        const reviewDiv = document.createElement("div");
+
+        const reviewP = document.createElement("p");
+        reviewP.classList.add("review");
+        reviewP.innerHTML = `"${review}"`;
+    
+        const reviewer = document.createElement("h3");
+        reviewer.classList.add("reviewer-name");
+        reviewer.innerHTML = `${name}`;
+    
+        const reviewService = document.createElement("p");
+        reviewService.classList.add("review-service");
+        reviewService.innerHTML = `${service}`;
+
+        reviewDiv.appendChild(reviewP);
+
+        reviewCard.appendChild(reviewDiv);
+        reviewCard.appendChild(reviewer);
+        reviewCard.appendChild(reviewService);
+
+        reviewSection.appendChild(reviewCard);
+    }   
+}
+
+generateReview()

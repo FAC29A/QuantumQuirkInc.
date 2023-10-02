@@ -142,3 +142,7 @@ function generateReview() {
 }
 
 generateReview()
+
+//Making sure the intro video always plays and preventing bugs
+
+document.getElementById("intro-video").play()

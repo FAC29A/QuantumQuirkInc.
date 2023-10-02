@@ -124,8 +124,8 @@ nav {
     height: max-content;
     display: flex;
     align-items: center;
-    gap: 30px;
-
+    gap: 60px;
+    animation: scroll 35s linear infinite;
 }
 
 .review-card {
@@ -164,6 +164,14 @@ nav {
     font-size: 14px;
 }
 
+/*  Customer review slider animation  */
+
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-360px * 5))}
+}
+
 
 /** Team member cards **/
 
@@ -197,4 +205,5 @@ nav {
     padding: 20px;
     height: 300px;
 }
+
 

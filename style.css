@@ -131,3 +131,27 @@ nav {
     place-self: end;
     font-size: 14px;
 }
+
+/** Team member cards **/
+
+#team-members {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.team-card {
+    width: 250px;
+    height: auto;
+    position: relative;
+    background: coral;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 10px;
+}
+

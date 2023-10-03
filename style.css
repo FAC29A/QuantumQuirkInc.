@@ -342,6 +342,6 @@ nav {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0%;
-    background-color: blue;
+    background-color: var(--darkgrey);
     border-radius: 10px;
 }

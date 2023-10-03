@@ -95,15 +95,21 @@ function createCards() {
         let newCard = document.createElement('div');
         newCard.classList.add('team-card');
         newCard.innerHTML = `
+        <div class="member-info-container">
             <h2 class="member-name">${member.name}</h2>
-            <h3>${member.position}</h3>
-            <img src="${member.img}" alt="${member.name} Image">
-            <p>${member.bio}</p>
+            <h3 class="member-position">${member.position}</h3>
+        </div>
+        <div class="member-image-container">
+            <img src="${member.img}" alt="${member.name} Image class="member-image" ">
+        </div>
+        <div class="member-bio-container">
+            <p class="member-bio">${member.bio}</p>
+        </div>
         `;
         teamContainer.appendChild(newCard);
     }
 }
-createCards();
+createCards(); 
 
 // Generating user reviews
 

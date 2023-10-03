@@ -154,3 +154,11 @@ generateReview();
 //Making sure the intro video always plays and preventing bugs
 
 document.getElementById("intro-video").play();
+
+//Contact form functionality
+
+const contactForm = document.getElementById('contact-form'); 
+contactForm.addEventListener("submit", function (event) {
+    event.preventDefault(); 
+    
+});

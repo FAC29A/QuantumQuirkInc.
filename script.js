@@ -158,7 +158,25 @@ document.getElementById("intro-video").play();
 //Contact form functionality
 
 const contactForm = document.getElementById('contact-form'); 
+const errorMessage = document.getElementById('error-message');
+
 contactForm.addEventListener("submit", function (event) {
-    event.preventDefault(); 
+    event.preventDefault();
+    errorMessage.textContent = "";
+    
+    const fields = ['name', 'email', 'phone', 'subject', 'message'];
+    let hasError = false;
+
+    fields.forEach(fieldName => {
+        const input = document.getElementById(`input-${fieldName}`);
+        if (input.value.trim() === '') {
+            errorMessage.textContent = `${fieldName.charAt(0).toUpperCase() + fieldName.slice(1)} is required`;
+            hasError = true;
+        }
+    });
+
+    if (!hasError) {
+        contactForm.reset(); 
+    }
     
 });

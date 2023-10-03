@@ -19,6 +19,10 @@
     list-style: none;
 }
 
+.logo img {
+    max-width: 120px;
+}
+
 body {
     position: relative;
     background-color: var(--backgroundGrey);

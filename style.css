@@ -32,6 +32,13 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+}
+
+/*  Scroll bar styling */
+
+body::-webkit-scrollbar {
+    width: 3px;
 }
 
 /*  Nav bar styling  */
@@ -117,13 +124,15 @@ nav {
 }
 
 .review-title-section {
-    width: 100%;
     height: 65px;
     display: flex;
     align-items: center;
     padding: 10px;
     background-color: brown;
-    border-radius: 16px;
+    border-radius: 10px;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
@@ -134,6 +143,7 @@ nav {
     align-items: center;
     gap: 60px;
     animation: scroll 35s linear infinite;
+    overflow-x: hidden;
 }
 
 .review-card {
@@ -183,35 +193,103 @@ nav {
 
 /** Team member cards **/
 
+.team-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 20px;
+}
+
 .team-title {
-    margin-right: 10px;
-    margin-left: 10px;
     width: 100%;
     height: 65px;
     display: flex;
     align-items: center;
     background-color: coral;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
+    gap:10px;
 }
 
 .team-members-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
-    grid-gap: 10px; /* Spacing between items */
+    grid-gap: 20px; /* Spacing between items */
     max-width: 100%;
-    padding: 10px;
 }
 
 .team-card {
     background: coral;
     display: flex;
+    align-items: center;
     flex-direction: column;
+    gap: 20px;
+    border-radius: 4px;
+    padding: 10px;
+    height: 400px;
+}
+
+.member-info-container {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.member-image-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
-    padding: 20px;
-    height: 300px;
+    background-color: white;
+}
+
+.member-bio-container {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.member-name {
+    font-size: 18px;
+}
+
+.member-position {
+    font-size: 16px;
+}
+
+.member-image {
+    color: white;
+}
+
+.member-bio {
+    font-size: 16px;
 }
 
 
+
+
+/*  Section numbering styling */
+
+.section-number-container {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+
+/*  About us section styling  */

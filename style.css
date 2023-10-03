@@ -6,6 +6,7 @@
     --grey1: #020B26;
     --grey2: #343A40;
     --grey3: #495057;
+    --grey4: #adb5bd;
     --emerald: #06D6A0;
     --lightgrey: #F8F9FA;
     --teamcardsH: 400px;
@@ -129,7 +130,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: brown;
+    background-color:var(--emerald);
     border-radius: 10px;
     gap: 10px;
     margin-left: 10px;
@@ -155,7 +156,7 @@ nav {
     display: grid;
     gap: 5px 0px;
     padding: 15px;
-    background-color:brown;
+    background-color:var(--grey4);
     border-radius: 10px;
 }
 
@@ -169,7 +170,7 @@ nav {
 
 .review {
     font-size: 14px;
-    color: grey;
+    color: var(--grey2);
     text-align: center;
 }
 
@@ -210,7 +211,7 @@ nav {
     height: 65px;
     display: flex;
     align-items: center;
-    background-color: coral;
+    background-color: var(--darkgrey);
     border-radius: 10px;
     padding: 10px;
     gap:10px;
@@ -224,12 +225,12 @@ nav {
 }
 
 .team-card {
-    background: coral;
+    background: var(--grey2);
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    border-radius: 4px;
+    border-radius: 6px;
     padding: 10px;
     height: 400px;
 }
@@ -261,11 +262,14 @@ nav {
 }
 
 .member-name {
-    font-size: 18px;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--emerald);
 }
 
 .member-position {
     font-size: 16px;
+    color: var(--grey4);
 }
 
 .member-image {
@@ -274,6 +278,7 @@ nav {
 
 .member-bio {
     font-size: 16px;
+
 }
 
 
@@ -285,7 +290,7 @@ nav {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--emerald);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -307,7 +312,7 @@ nav {
     height: 65px;
     display: flex;
     align-items: center;
-    background-color: coral;
+    background-color: var(--darkgrey);
     padding: 10px;
     border-radius: 10px;
     gap: 10px;

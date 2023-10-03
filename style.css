@@ -345,3 +345,55 @@ nav {
     background-color: blue;
     border-radius: 10px;
 }
+
+.service-main-tab {
+    flex-grow: 3;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: .5px solid grey;
+    padding: 10px;
+}
+
+.service-lower-tab {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: .5px solid grey;
+    padding: 10px;
+}
+
+.service-lower-tab:nth-child(7) {
+    border-style: none;
+}
+
+.tab1-hidden, .main-tab-hidden {
+    display: none;
+}
+
+.service-main-tab:hover {
+    flex-grow: 6;
+}
+
+.service-lower-tab:hover {
+    flex-grow: 6;
+}
+
+.service-lower-tab:hover > .tab1-hidden {
+    display: block;
+}
+
+.service-main-tab:hover > .main-tab-hidden {
+    display: block;
+}
+
+.service-lower-tab:focus, .service-main-tab:focus {
+    flex-grow: 6;
+}

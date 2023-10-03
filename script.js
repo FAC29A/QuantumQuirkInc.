@@ -100,7 +100,7 @@ function createCards() {
             <h3 class="member-position">${member.position}</h3>
         </div>
         <div class="member-image-container">
-            <img src="${member.img}" alt="${member.name} Image class="member-image" ">
+            <img src="${member.img}" alt="${member.name} image" class="member-image" style="width= 250px;" ">
         </div>
         <div class="member-bio-container">
             <p class="member-bio">${member.bio}</p>

@@ -273,7 +273,8 @@ nav {
 }
 
 .member-image {
-    color: white;
+    width: 250px;
+    height: 250px;
 }
 
 .member-bio {

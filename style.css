@@ -415,9 +415,6 @@ nav {
     padding: 20px;
 }
 
-.service-lower-tab:hover >.tab-styling > img {
-    transform: rotate(270deg);
-}
 
 .service-lower-tab:focus >.tab-styling > img {
     transform: rotate(270deg);
@@ -427,9 +424,6 @@ nav {
     border-style: none;
 }
 
-.service-lower-tab:hover > .tab1-hidden {
-    display: block;
-}
 
 .tab1-hidden {
     display: none;

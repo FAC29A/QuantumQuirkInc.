@@ -10,6 +10,7 @@
     --emerald: #06D6A0;
     --lightgrey: #F8F9FA;
     --teamcardsH: 400px;
+
 }
 
 * {
@@ -18,10 +19,6 @@
     font-family: 'Archivo', sans-serif;
     box-sizing: border-box;
     list-style: none;
-}
-
-.logo img {
-    max-width: 120px;
 }
 
 body {
@@ -49,32 +46,59 @@ body::-webkit-scrollbar {
 
 /*  Nav bar styling  */
 
-nav {
-    background-color: var(--backgroundGrey);
-    position: sticky;
-    top: 0;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
-    z-index: 100;
+.header-wrapper {
+    position: fixed;
+    z-index: 9;
+    top: 0px;
+    left: 0px;
     width: 100%;
+    color: white;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 8vh;
+    background-color: var(--backgroundGrey);
+}
+
+.logo {
+    position: relative;
+    z-index: 20;
+}
+
+.logo img {
+    max-width: 120px;
+}
+
+.nav-links {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-location {
+    width: fit-content;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    color: var(--lightgrey);
+    gap: 7.5px;
+    text-decoration: none;
+    
+}
+
+.nav-location:hover {
+    color: var(--emerald);
 }
 
 .section-title {
     font-size: 0.9rem;
-}
-
-.hamburger {
-    height: 25px;
-    width: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: transparent;
-    border-style: none;
 }
 
 .nav-icon {

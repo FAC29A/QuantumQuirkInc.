@@ -331,9 +331,6 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
-
-
-
 /*  Section numbering styling */
 
 .section-number-container {
@@ -406,6 +403,11 @@ body::-webkit-scrollbar {
     width: 18px;
     height: 18px;
     transform: rotate(90deg);
+}
+
+.services-title {
+    font-size: 40px;
+    color: var(--emerald);
 }
 
 .services {

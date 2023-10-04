@@ -60,6 +60,12 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     height: 8vh;
     background-color: var(--darkgrey);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.right-header {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -77,7 +83,8 @@ body::-webkit-scrollbar {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    gap: 45px;
+    gap: 30px;
+    width: 100%;
 }
 
 .nav-location {

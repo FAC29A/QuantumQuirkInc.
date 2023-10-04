@@ -15,7 +15,7 @@ This project is the brainchild of our creative team, where we ventured into the 
 
 1. Clone the project:
    ```sh
-   git clone https://github.com/lucfercas/Crazy-agency
+   git clone https://fac29a.github.io/QuantumQuirkInc./
    ```
 
 2. Go to the project directory:

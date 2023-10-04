@@ -35,7 +35,7 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap:  50px;
 }
 
 /*  Scroll bar styling */
@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
 /*  Nav bar styling  */
 
 .header-wrapper {
-    position: fixed;
+    position: sticky;
     z-index: 9;
     top: 0px;
     left: 0px;
@@ -547,7 +547,59 @@ body::-webkit-scrollbar {
 /*  Responsiveness for medium sized screns  */
 
 @media screen and (max-width: 900px) {
-    body {
-        background-color: red;
+    .about-us-section {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        gap: 40px;
+    }
+    .intro-title {
+        font-size: 1.7rem;
+    }
+    .services-title {
+        font-size: 30px;
+    }
+    .team-members-section {
+        display: grid;
+        grid-template-columns: repeat(2, 3fr); /* 3 columns per row */
+        grid-gap: 20px; /* Spacing between items */
+        max-width: 100%;
+    }
+  }
+
+
+
+  /*  Responsiveness for small screens  */
+
+  @media screen and (max-width: 600px) {
+    .container {
+        gap: 30px;
+    }
+    .intro-title {
+        font-size: 1rem;
+    }
+    .team-members-section {
+        display: grid;
+        grid-template-columns: repeat(1, 3fr); /* 3 columns per row */
+        grid-gap: 20px; /* Spacing between items */
+        max-width: 100%;
+    }
+    .nav-links {
+        display: none;
+    }
+    .video-container {
+        width: 95%;
+    }
+    .about-us-section {
+        padding: 0px;
+    }
+    .input {
+        width: 100%;
+    }
+    .message-input {
+        min-width: 100%;
+    }
+    .form-container div {
+        width: 100%;
     }
   }

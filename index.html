@@ -43,7 +43,7 @@
         <div class="section-number-container">
             <span>2</span>
         </div>
-        <h3>About us</h3>
+        <h3 class="section-title">About us</h3>
     </div>
     <div class="about-us-section">
         <div id="about" class="about">
@@ -56,18 +56,7 @@
             <p>At the heart of our mission lies the desire to provide "out-of-this-world" services that defy conventional
                 logic. We aim to inspire wonder and curiosity in our clients and their audiences, making them question the
                 boundaries of what's possible.</p>
-            <p>Our team is a league of visionaries, dreamers, and creative mavericks who thrive on pushing the envelope of
-                what can be achieved. Led by our founder, Dr. Quark E. Scientist, we're a diverse group of individuals who
-                bring unique talents and perspectives to the table.</p>
-            <p>When you partner with Quantum Quirk Inc., you're not just hiring an agency; you're embarking on a journey to
-                a realm where the extraordinary is the norm. We promise to challenge your expectations, shatter the status
-                quo, and deliver results that are nothing short of exceptional.</p>
-            <p>Join us as we continue to push the boundaries of what's possible. Explore the uncharted territories of
-                imagination with Quantum Quirk Inc., where the fantastic becomes reality, and the ordinary is left far
-                behind.</p>
-            <p>Welcome to the world of Quantum Quirk Inc. — where absurdity is our specialty, and creativity knows no
-                bounds.</p>
-            </div>
+        </div>
 
 
 <!--  Services section  -->
@@ -81,46 +70,51 @@
                     </p>
                 </div>
             </div>
-            <div class="service-lower-tab">
-                <h5>
-                    Marketing
-                </h5>
+            <div class="service-lower-tab" tabindex="0">
+                <div class="tab-styling">
+                    <h5>Marketing</h5>
+                    <img src="/assets/icons/arrow.png">
+                </div>
                 <div class="tab1-hidden">
-                    <p>They claim to have harnessed the power of time travel to market products in
-                    the past, present, and future simultaneously. Imagine promoting a product in ancient Rome or the distant
+                    <p>They claim to have <span class="emerald"> harnessed</span> the power of time travel to market products in
+                    the past, present, and future simultaneously. Imagine <span class="emerald">promoting</span> a product in ancient Rome or the distant
                     future!
                     </p>
                 </div>
             </div>
-            <div class="service-lower-tab" id="service-lower-tab">
-                <h5>Cryptozoological SEO</h5>
+            <div class="service-lower-tab"  tabindex="0">
+                <div class="tab-styling">
+                    <h5>Cryptozoological SEO</h5>
+                    <img src="/assets/icons/arrow.png">
+                </div>
                 <div class="tab1-hidden">
                     <p>Quantum Quirk Inc. employs a team of cryptozoologists who specialize in optimizing websites for mythical creatures and cryptids like Bigfoot, Loch Ness Monster, and Chupacabra.
                     </p>
                 </div>
             </div>
-            <div class="service-lower-tab">
-                <h5>Telepathic Graphic Design</h5>
+            <div class="service-lower-tab" tabindex="0">
+                <div class="tab-styling">
+                    <h5>Telepathic Graphic Design</h5>
+                    <img src="/assets/icons/arrow.png">
+                </div>
                 <div class="tab1-hidden">
                     <p>They have graphic designers who claim to communicate with your subconscious mind to create designs that speak directly to your deepest desires.</p>
                 </div>
             </div>
-            <div class="service-lower-tab">
-                <h5>
-                    Quantum Entanglement Social Media:
-                </h5>
+            <div class="service-lower-tab" tabindex="0">  
+                <div class="tab-styling">
+                    <h5>Quantum Entanglement Social Media</h5>
+                    <img src="/assets/icons/arrow.png">
+                </div>
                 <div class="tab1-hidden">
                     <p>Their social media experts say they can make your brand's posts go viral across multiple dimensions simultaneously.</p>
                 </div>
             </div>
-            <div class="service-lower-tab">  
-                <h5>Quantum Entanglement Social Media</h5>
-                <div class="tab1-hidden">
-                    <p>Their social media experts say they can make your brand's posts go viral across multiple dimensions simultaneously.</p>
+            <div class="service-lower-tab" tabindex="0">
+                <div class="tab-styling">
+                    <h5>Alien Collaboration</h5>
+                    <img src="/assets/icons/arrow.png">
                 </div>
-            </div>
-            <div class="service-lower-tab">
-                <h5>Alien Collaboration</h5>
                 <div class="tab1-hidden">
                     <p>Quantum Quirk Inc. boasts partnerships with extraterrestrial beings to bring you otherworldly creativity and innovation.</p>
                 </div>
@@ -137,7 +131,7 @@
                 <div class="section-number-container">
                     <span>2</span>
                 </div>
-                <h2>Meet the Team:</h2>
+                <h2 class="section-title">Meet the Team</h2>
             </div>
             <div id="team-members" class="team-members-section">
             </div>
@@ -151,7 +145,7 @@
                 <div class="section-number-container">
                     <span>3</span>
                 </div>
-                <h2>What our clients say about us</h2>
+                <h2 class="section-title" >What our clients say about us</h2>
             </div>
             <div class="review-section" id="review-section">
             </div>
@@ -161,19 +155,24 @@
         <!-- Contact us form -->
 
 
-        <section id="contact-us">
-            <h2>Contact us by filling this form, or thinking about us really hard.</h2>
+        <section id="contact-us" class="contact-us">
+            <div class="contact-us-title">
+                <div class="section-number-container">
+                    <span>4</span>
+                </div>
+                <h2 class="section-title">Contact us by filling this form, or thinking about us really hard.</h2>
+            </div>
             <form id="my-form" action="https://formspree.io/f/mzblkago" method="POST">
-                <div>
+                <div class="form-container">
                     <input type="text" required id="input-name" placeholder="Name">
                     <input type="email" required id="input-email" placeholder="Email address">
                     <input type="tel" required id="input-phone" placeholder="Phone number">
                     <input type="text" required id="input-subject" placeholder="Subject">
+                    <div>
+                        <textarea name="message" type="text" required placeholder="Message"></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="submit-button">
                 </div>
-                <div>
-                    <textarea name="message" type="text" required placeholder="Message"></textarea>
-                </div>
-                <input type="submit" value="Submit" id="submit-button">
             </form>
         </section>
 

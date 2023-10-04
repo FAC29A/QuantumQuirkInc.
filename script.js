@@ -138,11 +138,16 @@ function generateReview() {
             reviewService.classList.add("review-service");
             reviewService.innerHTML = `${service}`;
     
+            const stylingContainer = document.createElement("div")
+            stylingContainer.classList.add("review-bottom-style");
+
             reviewDiv.appendChild(reviewP);
-    
+            
+            stylingContainer.appendChild(reviewer)
+            stylingContainer.appendChild(reviewService)
+
             reviewCard.appendChild(reviewDiv);
-            reviewCard.appendChild(reviewer);
-            reviewCard.appendChild(reviewService);
+            reviewCard.appendChild(stylingContainer);
     
             reviewSection.appendChild(reviewCard);
         }   
@@ -174,9 +179,12 @@ function handleSubmit(event) {
     } else {
           status.innerHTML = "Oops! There was a problem submitting your form"
         }
-
   }).catch(error => {
     status.innerHTML = "Oops! There was a problem submitting your form"
   });
 }
 form.addEventListener("submit", handleSubmit)
+
+
+// Opening services sections
+

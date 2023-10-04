@@ -53,14 +53,17 @@ nav {
     background-color: var(--backgroundGrey);
     position: sticky;
     top: 0;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 50px;
     z-index: 100;
     width: 100%;
+}
+
+.section-title {
+    font-size: 0.9rem;
 }
 
 .hamburger {
@@ -86,7 +89,7 @@ nav {
 /** Video stlying start **/
 
 .video-container {
-    width: 96%;
+    width: 98%;
     height: auto;
     overflow: hidden;
     position: relative;
@@ -124,7 +127,7 @@ nav {
 .customer-reviews {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     overflow: hidden;
     width: 100%;
 }
@@ -139,6 +142,7 @@ nav {
     gap: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 0.9rem;
 }
 
 
@@ -158,7 +162,6 @@ nav {
     max-height: 200px;
     border-style: none;
     display: grid;
-    gap: 5px 0px;
     padding: 15px;
     background-color: #141414;
     border-radius: 10px;
@@ -174,18 +177,33 @@ nav {
 
 .review {
     font-size: 14px;
-    color: var(--grey2);
+    color: #8D9297;
     text-align: center;
 }
 
 .reviewer-name {
     place-self: end;
     font-size: 18px;
+    color: var(--emerald);
 }
 
 .review-service {
     place-self: end;
     font-size: 14px;
+    color: var(--grey3);
+}
+
+.review-section:hover {
+    animation-play-state: paused;
+}
+
+.review-bottom-style {
+    place-self: end;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
 }
 
 /*  Customer review slider animation  */
@@ -219,11 +237,12 @@ nav {
     border-radius: 10px;
     padding: 10px;
     gap:10px;
+    font-size: .9rem;
 }
 
 .team-members-section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    grid-template-columns: repeat(3, 3fr); /* 3 columns per row */
     grid-gap: 20px; /* Spacing between items */
     max-width: 100%;
 }
@@ -283,7 +302,8 @@ nav {
 
 .member-bio {
     font-size: 16px;
-
+    color: #8D9297;
+    text-align: center;
 }
 
 
@@ -321,15 +341,16 @@ nav {
     padding: 10px;
     border-radius: 10px;
     gap: 10px;
+    font-size: 0.9rem;
 }
 
 .about-us-section {
-    background-color: #343A40;
     padding: 10px;
     border-radius: 15px;
     display: flex;
     width: 100%;
     gap: 10px;
+    height: 500px;
 }
 
 .about {
@@ -337,8 +358,29 @@ nav {
     flex-shrink: 1;
     flex-basis: 0%;
     padding: 10px;
-    height: max-content;
+    height: auto;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.about p {
+    text-align: center;
+}
+
+.tab-styling {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tab-styling img {
+    width: 18px;
+    height: 18px;
+    transform: rotate(90deg);
 }
 
 .services {
@@ -358,7 +400,7 @@ nav {
     flex-direction: column;
     gap: 10px;
     border-bottom: .5px solid grey;
-    padding: 10px;
+    padding: 15px;
 }
 
 .service-lower-tab {
@@ -370,6 +412,71 @@ nav {
     flex-direction: column;
     gap: 10px;
     border-bottom: .5px solid grey;
-    padding: 10px;
+    padding: 20px;
 }
 
+.service-lower-tab:hover >.tab-styling > img {
+    transform: rotate(270deg);
+}
+
+.service-lower-tab:focus >.tab-styling > img {
+    transform: rotate(270deg);
+}
+
+.service-lower-tab:nth-child(6) {
+    border-style: none;
+}
+
+.service-lower-tab:hover > .tab1-hidden {
+    display: block;
+}
+
+.tab1-hidden {
+    display: none;
+    color: #8D9297;
+}
+
+.main-tab-hidden {
+    color: #8D9297;
+}
+
+.service-main-tab h4 {
+    font-size: 20px;
+}
+
+.service-lower-tab:focus > .tab1-hidden {
+    display: block;
+}
+
+.emerald {
+    color: var(--emerald);
+}
+
+/*  Contact us styling   */
+
+.contact-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+}
+
+.contact-us-title {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    background-color: var(--darkgrey);
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}

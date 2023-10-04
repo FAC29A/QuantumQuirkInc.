@@ -339,6 +339,8 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
+
+
 /*  Section numbering & titles styling */
 
 .section-number-container {
@@ -576,6 +578,9 @@ body::-webkit-scrollbar {
         grid-template-columns: repeat(2, 3fr); /* 3 columns per row */
         grid-gap: 20px; /* Spacing between items */
         max-width: 100%;
+    }
+    .section-title {
+        font-size: .9rem;
     }
   }
 

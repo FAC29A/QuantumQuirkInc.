@@ -345,7 +345,7 @@ body::-webkit-scrollbar {
 }
 
 .section-title {
-    font-size: 26px;
+    font-size: 1rem;
     font-weight: 300;
  }
 
@@ -605,5 +605,13 @@ body::-webkit-scrollbar {
     }
     .form-container div {
         width: 100%;
+    }
+    .contact-us-title {
+        padding: 5px;
+    }
+    .section-title {
+        font-size: 0.9rem;
+        text-wrap:wrap;
+        max-width: 90%;
     }
   }

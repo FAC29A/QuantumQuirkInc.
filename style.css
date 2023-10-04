@@ -70,6 +70,7 @@ body::-webkit-scrollbar {
 .logo img {
     max-width: 120px;
     cursor: pointer;
+    height: auto;
 }
 
 .nav-links {
@@ -86,7 +87,7 @@ body::-webkit-scrollbar {
     align-items: center;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 100%;
     color: var(--lightgrey);
     gap: 7.5px;
@@ -376,7 +377,7 @@ body::-webkit-scrollbar {
     display: flex;
     width: 100%;
     gap: 10px;
-    height: 500px;
+    height: max-content;
 }
 
 .about {
@@ -577,7 +578,7 @@ body::-webkit-scrollbar {
 
   @media screen and (max-width: 600px) {
     .container {
-        gap: 30px;
+        gap: 20px;
     }
     .intro-title {
         font-size: 1rem;
@@ -588,8 +589,13 @@ body::-webkit-scrollbar {
         grid-gap: 20px; /* Spacing between items */
         max-width: 100%;
     }
+    .nav-location {
+        font-size: 14px;
+        width: 60%;
+    }
     .nav-links {
-        display: none;
+        display: flex;
+        gap: 10px;
     }
     .video-container {
         width: 95%;

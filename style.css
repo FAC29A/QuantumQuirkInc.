@@ -331,7 +331,7 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
-/*  Section numbering styling */
+/*  Section numbering & titles styling */
 
 .section-number-container {
     width: 25px;
@@ -344,6 +344,10 @@ body::-webkit-scrollbar {
     color: white;
 }
 
+.section-title {
+    font-size: 26px;
+    font-weight: 300;
+ }
 
 /*  About us section styling  */
 

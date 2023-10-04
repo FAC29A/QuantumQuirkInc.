@@ -30,7 +30,7 @@ This project is the brainchild of our creative team, where we ventured into the 
 
 ### Deployment:
 
-Or dive right in using GitHub Pages: https://lucfercas.github.io/Crazy-agency/
+Or dive right in using GitHub Pages: https://fac29a.github.io/QuantumQuirkInc./
 
 
 

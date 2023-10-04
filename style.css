@@ -35,7 +35,7 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
 }
 
 /*  Scroll bar styling */
@@ -69,6 +69,7 @@ body::-webkit-scrollbar {
 
 .logo img {
     max-width: 120px;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -511,7 +512,7 @@ body::-webkit-scrollbar {
     border-top-style: none;
     border-left-style: none;
     border-right-style: none;
-    color: var(--lightgrey);
+    color: white;
 }
 
 .input:focus {
@@ -535,6 +536,16 @@ body::-webkit-scrollbar {
     border-radius: 10px;
     border-style: none;
     background-color: var(--emerald);
-    color: var(--lightgrey);
+    color: white;
     cursor: pointer;
 }
+
+
+
+/*  Responsiveness for medium sized screns  */
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color: red;
+    }
+  }
